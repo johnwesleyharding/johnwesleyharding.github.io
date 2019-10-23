@@ -20,12 +20,12 @@ Here's a table:
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
-| < 10M | 1 | 19.27% |
-| 10M - 100M  | 165 | 2.52% |
-| 100M - 1B | 1558 | 1.58% |
-| 1B - 10B | 1102 | 1.86% |
-| 10 B - 100B | 265 | 2.32% | 
-| 100B < | 22 | 3.24% |
+| < $10M | 1 | 19.27% |
+| 10M - 100M  | 165 | 2.52 |
+| 100M - 1B | 1558 | 1.58 |
+| 1B - 10B | 1102 | 1.86 |
+| 10 B - 100B | 265 | 2.32 | 
+| 100B < | 22 | 3.24 |
 
 
 It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
