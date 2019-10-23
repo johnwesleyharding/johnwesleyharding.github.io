@@ -8,13 +8,15 @@ tags: [test]
 comments: false
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+**Do counties with large GDP also have a higher economic growth rate than counties with low GDP?**
 
-**Here is some bold text**
+Is this supposed to be mostly about the results or the data science process also?
 
-## Here is a secondary heading
 
-Here's a useless table:
+
+## This part has pictures and stuff.
+
+Here's a table:
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
@@ -26,24 +28,15 @@ Here's a useless table:
 | 100B < | 22 | 3.24% |
 
 
-How about a yummy barplot?
+It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![GDP](https://imgur.com/lPd9YV8.jpg)
 
-It can also be centered!
+Nebrask is doing better than Nevada.  Texas has way too many counties!
 
 ![Barplot](https://imgur.com/u1uI27l.jpg){: .center-block :}
 
-Here's a code chunk:
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
@@ -61,20 +54,3 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
