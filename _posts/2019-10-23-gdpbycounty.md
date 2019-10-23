@@ -12,11 +12,9 @@ comments: false
 
 Is this supposed to be mostly about the results or the data science process also?
 
+What is the effect of Americans moving into cities at higher concentrations on the GDP of both the urban and rural counties with shifting demographics.  I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  
 
-
-## This part has pictures and stuff.
-
-Here's a table:
+Distribution of Counties by 2015 GDP:
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
@@ -27,6 +25,7 @@ Here's a table:
 | 10 B - 100B | 265 | 2.32 | 
 | 100B < | 22 | 3.24 |
 
+## This next part has pictures.
 
 It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
 
