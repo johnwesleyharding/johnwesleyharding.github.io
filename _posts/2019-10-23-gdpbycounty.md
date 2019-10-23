@@ -32,7 +32,7 @@ How about a yummy barplot?
 
 It can also be centered!
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
+![Barplot](https://imgur.com/u1uI27l){: .center-block :}
 
 Here's a code chunk:
 
