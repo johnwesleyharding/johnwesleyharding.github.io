@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: Data Wrangling and Storytelling
 subtitle: Unit 1 Data Science project
@@ -22,7 +22,7 @@ Here's a useless table:
 | 10M - 100M  | 165 | 2.52% |
 | 100M - 1B | 1558 | 1.58% |
 | 1B - 10B | 1102 | 1.86% |
-| 10 B - 100B | 2.32% | 
+| 10 B - 100B | 265 | 2.32% | 
 | 100B < | 22 | 3.24% |
 
 
