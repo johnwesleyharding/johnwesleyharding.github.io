@@ -1,4 +1,4 @@
----
+--
 layout: post
 title: Data Wrangling and Storytelling
 subtitle: Unit 1 Data Science project
@@ -16,15 +16,17 @@ You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll w
 
 Here's a useless table:
 
-| Number | Next number | Previous number |
+| GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| < 10M | 1 | 19.27% |
+| 10M - 100M  | 165 | 2.52% |
+| 100M - 1B | 1558 | 1.58% |
+| 1B - 10B | 1102 | 1.86% |
+| 10 B - 100B | 2.32% | 
+| 100B < | 22 | 3.24% |
 
 
-How about a yummy crepe?
+How about a yummy barplot?
 
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
