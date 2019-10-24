@@ -10,11 +10,9 @@ comments: false
 
 **Do counties with large GDP also have a higher economic growth rate than counties with low GDP?**
 
-Is this supposed to be mostly about the results or the data science process also?
+One potential effect of Americans increasing move toward cities is a shift in GDP of both the urban and rural counties as those demographics change.  I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  
 
-What is the effect of Americans moving into cities at higher concentrations on the GDP of both the urban and rural counties with shifting demographics.  I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  
-
-Distribution of Counties by 2015 GDP:
+**Distribution of Counties by 2015 GDP:**
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
@@ -22,8 +20,8 @@ Distribution of Counties by 2015 GDP:
 | 10M - 100M  | 165 | 2.52 |
 | 100M - 1B | 1558 | 1.58 |
 | 1B - 10B | 1102 | 1.86 |
-| 10 B - 100B | 265 | 2.32 | 
-| 100B < | 22 | 3.24 |
+| 10B - 100B | 265 | 2.32 | 
+| > 100B | 22 | 3.24 |
 
 ## This next part has pictures.
 
