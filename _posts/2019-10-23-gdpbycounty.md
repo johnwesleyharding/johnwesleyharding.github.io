@@ -23,31 +23,12 @@ One potential effect of Americans increasing move toward cities is a shift in GD
 | 10B - 100B | 265 | 2.32 | 
 | > 100B | 22 | 3.24 |
 
-## This next part has pictures.
+**This next part has pictures**
 
 It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
 
 ![GDP](https://imgur.com/lPd9YV8.jpg)
 
-Nebrask is doing better than Nevada.  Texas has way too many counties!
+Nebraska is doing better than Nevada.  Texas has way too many counties!
 
 ![Barplot](https://imgur.com/u1uI27l.jpg){: .center-block :}
-
-
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
