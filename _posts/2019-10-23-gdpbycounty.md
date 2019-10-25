@@ -29,7 +29,7 @@ We can see that higher rates of growth occur in counties with both large and sma
 
 Just over half of all counties fit within the GDP range of $100 million to $1 billion dollars, and another 35% are within the $1 billion to $10 billion range.  Among these highly populated GDP ranges, the three year median growth rate does show a higher average percentage increase in the counties with larger GDPs, and that trend continues for counties with an economy of more than $10 billion and more than $100 billion.
 
-**Economic growth among Counties with a low share GDP is not easily defined**
+**Economic growth among Counties with a low share of GDP vary widely**
 
 ![Choropleth](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthmap.png)
 
