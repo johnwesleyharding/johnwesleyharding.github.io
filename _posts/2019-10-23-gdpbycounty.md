@@ -8,7 +8,7 @@ comments: false
 
 **Do counties with large GDP also have a higher economic growth rate than counties with low GDP?**
 
-One potential effect of Americans increasing move toward cities is a shift in GDP of both the urban and rural counties as those demographics change.  I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  
+One potential effect of Americans demographic shift toward cities is changing GDP in both the urban and rural counties across the United States.  I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  
 
 **Distribution of Counties by 2015 GDP:**
 
@@ -29,6 +29,8 @@ It seems that higher rates of growth occur in counties with both large and small
 
 ![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthswarm.png){: .center-block :}
 
-Nebraska is doing better than Nevada.  Texas has way too many counties!
+All of the outliers in growth rate occur in counties in the lower buckets of GDP size.  This makes sense as the impact made by any new development as a percentage of GDP is buffered by the scale of existing economic activity.
 
 ![Choropleth](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthmap.png)
+
+We can see the outlier counties in economic growth rate tend to be rural areas.  Many in Texas are likely related to the oil and gas boom spurred by fracking during the middle of the decade.  
