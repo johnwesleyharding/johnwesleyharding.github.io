@@ -16,7 +16,7 @@ The size of a county's economy varies not only by population, but also from fact
 
 ![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthswarm.png){: .center-block :}
 
-We can see that higher rates of growth occur in counties with both large and small shares of GDP.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but its economic growth is also higher than 99.9% of counties nationwide.  Most of the outliers in growth rate occur in counties in the lower buckets of GDP size.  This makes sense as the impact made by any new development as a percentage of GDP is buffered by the scale of existing economic activity.
+We can see that higher rates of growth occur in counties with both large and small shares of GDP.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but its economic growth is also higher than 99.9% of counties nationwide.  Most of the outliers in growth rate occur in counties in the lower buckets of GDP size.  This makes sense as the impact made by any new development as a percentage of GDP is buffered by the amount of existing economic activity.
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
@@ -27,12 +27,10 @@ We can see that higher rates of growth occur in counties with both large and sma
 | 10B - 100B | 265 | 2.32 | 
 | > 100B | 22 | 3.24 |
 
-Just over half of all counties fit within the green GDP range of $100 million to $1 billion dollars, and another 35% are within the $1 billion to $10 billion range.  Among these highly populated GDP ranges, the three year median growth rate does show a higher average percentage increase in the counties with larger GDPs, and that trend continues for counties with an economy of more than $10 billion and more than $100 billion.
+Just over half of all counties fit within the GDP range of $100 million to $1 billion dollars, and another 35% are within the $1 billion to $10 billion range.  Among these highly populated GDP ranges, the three year median growth rate does show a higher average percentage increase in the counties with larger GDPs, and that trend continues for counties with an economy of more than $10 billion and more than $100 billion.
 
-**Counties with a low GDP can't be as easily defined in terms of growth**
-
-
+**Economic growth among Counties with a low share GDP is not easily defined**
 
 ![Choropleth](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthmap.png)
 
-We can see the outlier counties in economic growth rate tend to be rural areas.  Many in Texas are likely related to the oil and gas boom spurred by fracking during the middle of the decade.  
+This shows us the outlier counties in economic growth rate are mostly in rural areas.  Many in Texas are likely related to the oil and gas boom spurred by fracking during the middle of the decade.  The states of Nevada and North Dakota stand out as having multiple counties with GDP in rapid decline.
