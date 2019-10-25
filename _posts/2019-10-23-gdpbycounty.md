@@ -29,7 +29,7 @@ Just over half of all counties fit within the GDP range of $100 million to $1 bi
 
 It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
 
-![GDP](https://imgur.com/lPd9YV8.jpg)
+![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthswarm.png)
 
 Nebraska is doing better than Nevada.  Texas has way too many counties!
 
