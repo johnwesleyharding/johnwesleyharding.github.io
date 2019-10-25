@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Wrangling and Storytelling
+title: How does GDP vary across all US counties?
 subtitle: Unit 1 Data Science project
 gh-repo: daattali/beautiful-jekyll 
 comments: false
@@ -12,11 +12,11 @@ One potential effect of America's demographic shift toward cities from the count
 
 **Distribution of Counties by 2015 GDP:**
 
-Here's the distribution of counties by GDP:
+The size of a county's economy varies not only by population, but also from factors including geographical size, terrain, and regional industries.  This swarmplot shows the distribution of counties by GDP:
 
 ![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthswarm.png){: .center-block :}
 
-It seems that higher rates of growth occur in counties with both large and small shares of GDP.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but its economic growth is also higher than 99.9% of counties nationwide.  Most of the outliers in growth rate occur in counties in the lower buckets of GDP size.  This makes sense as the impact made by any new development as a percentage of GDP is buffered by the scale of existing economic activity.
+We can see that higher rates of growth occur in counties with both large and small shares of GDP.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but its economic growth is also higher than 99.9% of counties nationwide.  Most of the outliers in growth rate occur in counties in the lower buckets of GDP size.  This makes sense as the impact made by any new development as a percentage of GDP is buffered by the scale of existing economic activity.
 
 | GDP Range | Number of Counties | Mean growth 2012-2015 |
 | :------ |:--- | :--- |
