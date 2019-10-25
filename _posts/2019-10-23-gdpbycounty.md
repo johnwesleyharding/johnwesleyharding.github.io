@@ -33,4 +33,4 @@ It seems that higher rates of growth occur in counties with both large and small
 
 Nebraska is doing better than Nevada.  Texas has way too many counties!
 
-![Barplot](https://imgur.com/u1uI27l.jpg){: .center-block :}
+![Choropleth](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/newplot.png){: .center-block :}
