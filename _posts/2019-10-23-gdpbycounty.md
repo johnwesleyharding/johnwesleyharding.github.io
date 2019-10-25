@@ -25,7 +25,7 @@ Just over half of all counties fit within the GDP range of $100 million to $1 bi
 
 **Counties with a low GDP can't be as easily defined in terms of growth**
 
-It seems that higher rates of growth occur in counties with both large and small gdps.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
+It seems that higher rates of growth occur in counties with both large and small shares of GDP.  Loving, Texas is the only county with less than 10 million in GDP for 2016, but it's also in the top 1% of the top 1% in growth.  Here's the distribution of counties by GDP:
 
 ![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/growthswarm.png){: .center-block :}
 
