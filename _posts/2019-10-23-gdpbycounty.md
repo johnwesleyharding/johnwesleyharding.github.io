@@ -2,9 +2,7 @@
 layout: post
 title: Data Wrangling and Storytelling
 subtitle: Unit 1 Data Science project
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: 
+gh-repo: daattali/beautiful-jekyll 
 comments: false
 ---
 
