@@ -8,7 +8,7 @@ comments: false
 
 **Do counties with large GDP also have a higher economic growth rate than counties with low GDP?**
 
-One potential effect of America's demographic shift toward cities from the country is changing GDP in both the urban and rural counties across the United States.  For this project, I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  The values in the data use chained dollar amounts to account for inflation.
+One potential effect of America's demographic shift toward cities from small towns is changing GDP in both the urban and rural counties across the United States.  For this project, I looked at data from all 3113 county-equivalent economic areas in the United States from 2012 to 2015.  The values in the data use chained dollar amounts to account for inflation.
 
 **Distribution of Counties by 2015 GDP:**
 
