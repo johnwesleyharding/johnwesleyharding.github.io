@@ -6,11 +6,11 @@ subtitle: Colorado Data Scientist
 
 image goes here
 
-#Mission Statement
+#### Mission Statement
   Learn data science and do things with it.
 
 Contact Info
-  ficticioushandle@domain.extension
+  [ficticioushandle@domain.extension]
   
 Links
-  https://github.com/johnwesleyharding
+  [GitHub](https://github.com/johnwesleyharding)
