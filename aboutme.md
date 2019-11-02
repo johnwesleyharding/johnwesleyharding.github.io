@@ -10,7 +10,7 @@ image goes here
   Learn data science and do things with it.
 
 Contact Info
-  [fictitioushandle@domain.extension](fictitioushandle@domain.extension)
-  
+- [fictitioushandle@domain.extension](fictitioushandle@domain.extension)
+
 Links
-  [GitHub](https://github.com/johnwesleyharding)
+- [GitHub](https://github.com/johnwesleyharding)
