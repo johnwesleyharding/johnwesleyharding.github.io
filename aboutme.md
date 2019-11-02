@@ -4,7 +4,13 @@ title: John Wesley Harding
 subtitle: Colorado Data Scientist
 ---
 
-Interests:
+image goes here
 
-- Protecting free speech
-- Extra-dimensional phenomena
+#Mission Statement
+  Learn data science and do things with it.
+
+Contact Info
+  ficticioushandle@domain.extension
+  
+Links
+  https://github.com/johnwesleyharding
