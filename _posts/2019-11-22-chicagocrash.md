@@ -12,7 +12,7 @@ The Chicago collisions datasets for people, vehicles, and crashes have almost 80
 
 | most severe injury | raw | balanced |
 | :------ |:--- | :--- |
-| NO INDICATION OF INJURY | 87.9% | 20.0% |
+| NO INDICATION OF INJURY | 87.9 % | 20.0 % |
 | NONINCAPACITATING INJURY | 6.6 | 20.0 |
 | REPORTED, NOT EVIDENT | 3.9 | 20.0 |
 | INCAPACITATING INJURY | 1.5 | 20.0 |
