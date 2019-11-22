@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The safest speed to drive in Chicago is 0mph
+title: The safest speed to drive in Chicago is 0 miles per hour
 subtitle: Unit 2 Data Science project
 gh-repo: daattali/beautiful-jekyll 
 comments: false
