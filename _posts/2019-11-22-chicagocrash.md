@@ -13,10 +13,10 @@ The Chicago collisions datasets for people, vehicles, and crashes have almost 80
 | most severe injury | raw | balanced |
 | :------ |:--- | :--- |
 | NO INDICATION OF INJURY | 87.9% | 20.0% |
-| NONINCAPACITATING INJURY | 06.6% | 20.0% |
-| REPORTED, NOT EVIDENT | 03.9% | 20.0% |
-| INCAPACITATING INJURY | 01.5% | 20.0% |
-| FATAL | 00.1% | 20.0% |
+| NONINCAPACITATING INJURY | 6.6% | 20.0% |
+| REPORTED, NOT EVIDENT | 3.9% | 20.0% |
+| INCAPACITATING INJURY | 1.5% | 20.0% |
+| FATAL | 0.1% | 20.0% |
 
 I am currently using all features other than the target for modeling.  I will select features more carefully after determining if I can merge in additional data.  Until then many features are irrelevant and potential leakage exists from at least four features (airbag, ejection, ems, hospital). [critical failure: 2]
 
