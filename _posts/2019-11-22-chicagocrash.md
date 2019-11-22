@@ -22,11 +22,21 @@ The Chicago collisions datasets for people, vehicles, and crashes have almost 80
 
 Selected features from the data include one continuous variable, the posted speed limit, and several ordinally encoded categoricals: weather and lighting conditions, crash type (head-on, rear-end, etc), road defects, month of year, hour of day, and contributing causes.  These features all came from the primary crash dataset, but additional information about the involved persons and vehicles may also be relevant.  A feature that described a post-collision action of 'drive away' was removed to avoid spoiling the target.
 
-The goal is to determine which of these features are most often present in collisions with fatal injuries.  Using a dummy classifier, I identified a baseline for recall of the 'Fatal' label of . 
+The goal is to determine which of these features are most often present in collisions with fatal injuries.  Using a stratified dummy classifier, I identified a baseline for recall of the 'Fatal' label at 0% and and overall model accuracy of 78%. 
 
 **Models**
 
-I selected a Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and used Random Search CV for validation and modest hyperparameter tuning in both models.  To best work toward the goal, the validation metric is recall score for the 'Non-incapacitating Injury', 'Incapacitating Injury', and 'Fatal'.  The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
+I selected a Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and used Random Search CV for validation and modest hyperparameter tuning in both models.  To best work toward the goal, the validation metric is recall score for the 'Non-incapacitating Injury', 'Incapacitating Injury', and 'Fatal'.  
+
+```python
+make_scorer(recall_score, average = 'macro', labels = ['NONINCAPACITATING INJURY', 'INCAPACITATING INJURY', 'FATAL'])
+```
+
+The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
+
+**Logistic Regression Test Results**
+
+
 
 **Random Forrest Test Results**
 
@@ -42,9 +52,11 @@ I selected a Logistic Regression as a linear classification model, Random Forest
 
 Test score for 'Fatal' recall is .56.
 
+Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
+
 ![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
 
-Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
+
 
 **Conclusion**
 
