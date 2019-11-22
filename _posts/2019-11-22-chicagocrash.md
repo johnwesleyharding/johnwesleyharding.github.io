@@ -20,7 +20,7 @@ comments: false
 
 
 
-![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/image.png){: .center-block :}
+![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/image.png){: .center-block :}
 
 | label | predicted | precision | recall | actual |
 | :------ |:--- | :--- | :--- | :--- |
@@ -29,3 +29,5 @@ comments: false
 | NO INDICATION OF INJURY | 55354 | 1.00 | 0.88 | 62929 |
 | NONINCAPACITATING INJURY | 3557 | 0.28 | 0.22 | 4649 |
 | REPORTED, NOT EVIDENT | 5112 | 0.27 | 0.48 | 2830 |
+
+![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/crashpermutation.png){: .center-block :}
