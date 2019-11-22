@@ -50,7 +50,7 @@ The best cross validation score for Logistic Regression is 0.28, with the tree m
 
 The Logistic Regression model predicted almost 19000 fatalities in the test data, and accurately found fewer than half of the 70 true values.  The test score for 'Fatal' recall is 49% and the overall accuracy of the model is only 25%.
 
-**Random Forrest Test Results**
+**Random Forest Test Results**
 
 ![conftree](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashconftree.png){: .center-block :}
 
