@@ -46,4 +46,4 @@ Permutation importance from the tree model produced only 'Posted Speed Limit' as
 
 **Conclusion**
 
-Ultimately I'm not sure if this is a case where the outcome is simply not strongly related to the sample features or if an errant path in the wilderness of data science left me lost with no trail of breadcrumbs.
+Ultimately I'm not sure if this is a case where the outcome is simply not strongly related to the sample features or if an errant path in the wilderness of data science left me lost with no trail of bread crumbs.
