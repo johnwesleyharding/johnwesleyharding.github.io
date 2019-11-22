@@ -35,11 +35,20 @@ scoring = make_scorer(recall_score,
                                'INCAPACITATING INJURY', 'FATAL']),
 ```
 
-The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
+The best cross validation score for Logistic Regression is 0.28, with the tree model evaluating slightly better at 0.33.
 
 **Logistic Regression Test Results**
 ![conflogr](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashconflogr.png){: .center-block :}
 
+| most severe injury | predicted | precision | recall | actual |
+| :------ | :--- | :--- | :--- | :--- |
+| FATAL | 18977 | 0.00 | 0.49 | 70 |
+| INCAPACITATING INJURY | 7058 | 0.02 | 0.14 | 1060 |
+| NO INDICATION OF INJURY | 17170 | .91 | 0.25 | 62901 |
+| NONINCAPACITATING INJURY | 8437 | 0.08 | 0.15 | 4681 |
+| REPORTED, NOT EVIDENT | 19932 | 0.05 | 0.35 | 2862 |
+
+The Logistic Regression model predicted almost 19000 fatalities in the test data, and accurately found fewer than half of the 70 true values.  The test score for 'Fatal' recall is 49% and the overall accuracy of the model is only 25%.
 
 **Random Forrest Test Results**
 
@@ -47,13 +56,13 @@ The best cross validation score for Logistic Regression is 0.28, while the tree 
 
 | most severe injury | predicted | precision | recall | actual |
 | :------ | :--- | :--- | :--- | :--- |
-| FATAL | 5572 | 0.01 | 0.56 | 55 |
-| INCAPACITATING INJURY | 7466 | 0.23 | 0.06 | 1101 |
-| NO INDICATION OF INJURY | 32724 | .95 | 0.49 | 63033 |
-| NONINCAPACITATING INJURY | 9242 | 0.11 | 0.21 | 4602 |
-| REPORTED, NOT EVIDENT | 16570 | 0.06 | 0.33 | 2783 |
+| FATAL | 7523 | 0.01 | 0.67 | 70 |
+| INCAPACITATING INJURY | 5453 | 0.05 | 0.25 | 1060 |
+| NO INDICATION OF INJURY | 32943 | .95 | 0.50 | 62901 |
+| NONINCAPACITATING INJURY | 8479 | 0.12 | 0.22 | 4681 |
+| REPORTED, NOT EVIDENT | 17176 | 0.05 | 0.33 | 2862 |
 
-Test score for 'Fatal' recall is .56.
+The Random Forest Classifier model predicted just over 7500 fatalities in the test data, and accurately found two-thirds of the true values.  The test score for 'Fatal' recall is .67 and the overall accuracy of the model is 47%.
 
 Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
 
