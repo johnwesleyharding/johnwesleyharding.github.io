@@ -10,7 +10,7 @@ comments: false
 
 The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations from the past five years that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Most Severe Injury' as the target feature and specifically focused on the 'Fatal' and 'Incapacitating Injury' labels.  The majority of five target classes is 'No indication of injury' at ~88% frequency, while 'Fatal' occurs in only 0.08% of cases.  Because of the extreme weights of this multi-class target, I rebalanced the proportion of observations in the train data before modeling.
 
-| label | raw | balanced |
+| most severe injury | raw | balanced |
 | :------ |:--- | :--- |
 | NO INDICATION OF INJURY | 87.9% | 20.0% |
 | NONINCAPACITATING INJURY | 06.6% | 20.0% |
@@ -28,7 +28,7 @@ Because of the aforementioned weight imbalance, the metric was unable to registe
 
 ![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/image.png){: .center-block :}
 
-| label | predicted | precision | recall | actual |
+| most severe injury | predicted | precision | recall | actual |
 | :------ |:--- | :--- | :--- | :--- |
 | FATAL | 3796 | 0.01 | 0.67 | 63 |
 | INCAPACITATING INJURY | 3755 | 0.09 | 0.29 | 1103 |
