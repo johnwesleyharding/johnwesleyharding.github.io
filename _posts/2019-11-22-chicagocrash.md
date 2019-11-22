@@ -20,7 +20,7 @@ comments: false
 
 
 
-![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/image.png){: .center-block :}
+![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/image.png){: .center-block :}
 
 | label | predicted | precision | recall | actual |
 | :------ |:--- | :--- | :--- | :--- |
@@ -30,4 +30,4 @@ comments: false
 | NONINCAPACITATING INJURY | 3557 | 0.28 | 0.22 | 4649 |
 | REPORTED, NOT EVIDENT | 5112 | 0.27 | 0.48 | 2830 |
 
-![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/crashpermutation.png){: .center-block :}
+![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
