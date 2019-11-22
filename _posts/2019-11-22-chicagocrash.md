@@ -8,7 +8,7 @@ comments: false
 
 **The data**
 
-The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations from the past five years that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Most Severe Injury' as the target feature and specifically focused on the 'Fatal' and 'Incapacitating Injury' labels.  The majority of five target classes is 'No indication of injury' at ~88% frequency, while 'Fatal' occurs in only 0.08% of cases.  Because of the extreme weights of this multi-class target, I randomly undersampled the proportion of observations for heavier labels before modeling the training data.
+The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations from the past five years that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Most Severe Injury' as the target feature and specifically focused on the 'Fatal' and 'Incapacitating Injury' labels.  The majority of five target classes is 'No indication of injury' at ~88% frequency, while 'Fatal' occurs in only 0.08% of cases.  Because of the extreme weights of this multi-class target, I randomly undersampled the observations for heavier labels before modeling the training data.
 
 | most severe injury | raw | balanced |
 | :------ |:--- | :--- |
