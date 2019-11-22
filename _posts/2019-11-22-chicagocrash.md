@@ -6,9 +6,9 @@ gh-repo: daattali/beautiful-jekyll
 comments: false
 ---
 
-**Can we determine what conditions lead to vehicle collisions that result in serious injury or death?**
+**The data**
 
-The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand samples that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  Like when a car hits a person - that's not good at all.  I selected 'Injury Classification' as the target feature because it says 'classification' right there in its name, ezpz.  The majority of five target classes is 'No indication of injury' at ~92.5% frequency, and the class of principle interest is 'Fatal' occurring in only 0.04% of cases.  Because of the extreme weights of the multi-class target, preprocessing to ?stratify? the proportion of samples is necessary, but I haven't yet figured out how to go about this.  [critical failure: 1]
+The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Injury Classification' as the target feature because it says 'classification' right there in its name, ezpz.  The majority of five target classes is 'No indication of injury' at ~92.5% frequency, and the class of principle interest is 'Fatal' occurring in only 0.04% of cases.  Because of the extreme weights of the multi-class target, preprocessing to ?stratify? the proportion of samples is necessary, but I haven't yet figured out how to go about this.  [critical failure: 1]
 
 I am currently using all features other than the target for modeling.  I will select features more carefully after determining if I can merge in additional data.  Until then many features are irrelevant and potential leakage exists from at least four features (airbag, ejection, ems, hospital). [critical failure: 2]
 
