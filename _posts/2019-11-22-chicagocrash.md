@@ -26,12 +26,13 @@ The goal is to determine which of these features are most often present in colli
 
 **Models**
 
-I selected a Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and used Random Search CV for validation and modest hyperparameter tuning in both models.  To best work toward the goal, the validation metric is recall score for the 'Non-incapacitating Injury', 'Incapacitating Injury', and 'Fatal'.  
+I selected Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and used Random Search CV for validation and hyperparameter tuning in both models.  To best work toward the goal, the validation metric is recall score for the 'Non-incapacitating Injury', 'Incapacitating Injury', and 'Fatal' labels.  
 
 ```python
 scoring = make_scorer(recall_score, 
                       average = 'macro', 
-                      labels = ['NONINCAPACITATING INJURY', 'INCAPACITATING INJURY', 'FATAL']),
+                      labels = ['NONINCAPACITATING INJURY', 
+                      'INCAPACITATING INJURY', 'FATAL']),
 ```
 
 The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
