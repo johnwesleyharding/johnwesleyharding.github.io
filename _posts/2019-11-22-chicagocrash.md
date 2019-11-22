@@ -64,6 +64,8 @@ The Logistic Regression model predicted almost 19000 fatalities in the test data
 
 The Random Forest Classifier model predicted just over 7500 fatalities in the test data, and accurately found two-thirds of the true values.  The test score for 'Fatal' recall is .67 and the overall accuracy of the model is 47%.
 
+**Feature Analysis**
+
 Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
 
 ![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermtree.png){: .center-block :}
