@@ -23,6 +23,7 @@ comments: false
 
 
 | label | predicted | precision | recall | f1-score | actual |
+| :------ |:--- | :--- | :--- | :--- | :--- |
 | FATAL | 3796 | 0.01 | 0.67 | 0.02 | 63 |
 | INCAPACITATING INJURY | 3755 | 0.09 | 0.29 | 0.13 | 1103 |
 | NO INDICATION OF INJURY | 55354 | 1.00 | 0.88 | 0.94 | 62929 |
