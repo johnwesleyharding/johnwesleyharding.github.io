@@ -8,35 +8,41 @@ comments: false
 
 **The data**
 
-The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations from the past five years that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Most Severe Injury' as the target feature and specifically focused on the 'Fatal' and 'Incapacitating Injury' labels.  The majority of five target classes is 'No indication of injury' at ~88% frequency, while 'Fatal' occurs in only 0.08% of cases.  Because of the extreme weights of this multi-class target, I randomly undersampled the observations for heavier labels before modeling the training data.
+The Chicago collisions datasets for people, vehicles, and crashes have almost 800 thousand observations from the past five years that can be used to determine the conditions likely to result in serious injuries to drivers, passengers or pedestrians.  I selected 'Most Severe Injury' as the target feature and specifically focused on the ‘Fatal’ and ‘Incapacitating Injury’ labels.  The majority of five target classes is 'No indication of injury' at ~88% frequency, while 'Fatal' occurs in only 0.08% of cases.  Because of the extreme weights of this multi-class target, I randomly undersampled the observations for heavier labels before modeling the training data.
 
 | most severe injury | raw | balanced |
-| :------ |:--- | :--- |
+| :------ | :--- | :--- |
 | NO INDICATION OF INJURY | 87.9 % | 20.0 % |
 | NONINCAPACITATING INJURY | 6.6 | 20.0 |
 | REPORTED, NOT EVIDENT | 3.9 | 20.0 |
 | INCAPACITATING INJURY | 1.5 | 20.0 |
 | FATAL | 0.1 | 20.0 |
 
-I am currently using all features other than the target for modeling.  I will select features more carefully after determining if I can merge in additional data.  Until then many features are irrelevant and potential leakage exists from at least four features (airbag, ejection, ems, hospital). [critical failure: 2]
+**Features**
 
-I selected a Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and recall score for the 'Fatal' and 'Incapacitating Injury' as the evaluation metric.  I use Random Search CV for model validation and hyperparameter selection in the tree model.  I don't know what hyperparameters to set for Logistic Regression yet.  [critical failure: 3]  The best validation score in the tree model is .02, which seems terrible but maybe it is at least an indication that I succeeded in setting up the score correctly in RandomSearchCV.  [potential awesomeness: 1]  The score could also improve with a better fit - currently very limited do to processing time (6 fits in 10 minutes with very small hyperranges).  Logistic Regression yielded a validation score of [forgot to record, cleared output already to rerun for the model for which I can set hyperparameters.
+Selected features from the data include one continuous variable, the posted speed limit, and several ordinally encoded categoricals: weather and lighting conditions, crash type (head-on, rear-end, etc), road defects, month of year, hour of day, and contributing causes.  These features all came from the primary crash dataset, but additional information about the involved persons and vehicles may also be relevant.  A feature that described a post-collision action of 'drive away' was removed to avoid spoiling the target.
 
-I still need to look into how to get feature importances from the best estimator, since that's kind of the whole point of the project. [critical failure: 4]
+The goal is to determine which of these features are most often present in collisions with fatal injuries.  Using a dummy classifier, I identified a baseline for recall of the 'Fatal' label of . 
 
-Because of the aforementioned weight imbalance, the metric was unable to register a single desired fatality prediction in the test data and said: "Precision and F-score are ill-defined".  [critical failure: 5]  Majority class recall is real good though, 0.99!
+**Models**
+
+I selected a Logistic Regression as a linear classification model, Random Forest Classifier as a tree model, and used Random Search CV for validation and modest hyperparameter tuning in both models.  To best work toward the goal, the validation metric is recall score for the 'Non-incapacitating Injury', 'Incapacitating Injury', and 'Fatal'.  The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
+
+![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
+
+Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
+
+**Random Forrest Test Results**
 
 ![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/image.png){: .center-block :}
 
 | most severe injury | predicted | precision | recall | actual |
-| :------ |:--- | :--- | :--- | :--- |
+| :------ | :--- | :--- | :--- | :--- |
 | FATAL | 3796 | 0.01 | 0.67 | 63 |
 | INCAPACITATING INJURY | 3755 | 0.09 | 0.29 | 1103 |
 | NO INDICATION OF INJURY | 55354 | 1.00 | 0.88 | 62929 |
 | NONINCAPACITATING INJURY | 3557 | 0.28 | 0.22 | 4649 |
 | REPORTED, NOT EVIDENT | 5112 | 0.27 | 0.48 | 2830 |
-
-![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
 
 **Conclusion**
 
