@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What causes bad injuries?
+title: The safest speed to drive in Chicago is 0mph
 subtitle: Unit 2 Data Science project
 gh-repo: daattali/beautiful-jekyll 
 comments: false
@@ -31,3 +31,6 @@ comments: false
 | REPORTED, NOT EVIDENT | 5112 | 0.27 | 0.48 | 2830 |
 
 ![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
+
+
+Ultimately I'm not sure if this is a case where the outcome is simply not strongly related to the sample features or if an errant path in the wilderness of data science left me lost with no trail of breadcrumbs.
