@@ -32,18 +32,18 @@ I selected Logistic Regression as a linear classification model, Random Forest C
 scoring = make_scorer(recall_score, 
                       average = 'macro', 
                       labels = ['NONINCAPACITATING INJURY', 
-                      'INCAPACITATING INJURY', 'FATAL']),
+                               'INCAPACITATING INJURY', 'FATAL']),
 ```
 
 The best cross validation score for Logistic Regression is 0.28, while the tree model yielded a score of ####.  
 
 **Logistic Regression Test Results**
-
+![conflogr](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashconflogr.png){: .center-block :}
 
 
 **Random Forrest Test Results**
 
-![confusion](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashconf.png){: .center-block :}
+![conftree](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashconftree.png){: .center-block :}
 
 | most severe injury | predicted | precision | recall | actual |
 | :------ | :--- | :--- | :--- | :--- |
@@ -57,7 +57,7 @@ Test score for 'Fatal' recall is .56.
 
 Permutation importance from the tree model produced only 'Posted Speed Limit' as relevant feature in terms of weight for the best model.  Despite re-sampling for balance in the train data, the reality of those same distributions in the test data still warps many of of the prediction results.
 
-![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermutation.png){: .center-block :}
+![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermtree.png){: .center-block :}
 
 
 
