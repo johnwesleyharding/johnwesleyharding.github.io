@@ -68,8 +68,6 @@ Permutation importance from the tree model produced only 'Posted Speed Limit' as
 
 ![permutation](https://github.com/johnwesleyharding/johnwesleyharding.github.io/raw/master/img/crashpermtree.png){: .center-block :}
 
-
-
 **Conclusion**
 
-Ultimately I'm not sure if this is a case where the outcome is simply not strongly related to the sample features or if an errant path in the wilderness of data science left me lost with no trail of bread crumbs.
+The goal of identifying factors in fatal collision is not achieved by these models.  It's possible that even after balancing the training data, the skew of ground truth toward non-injury prevented meaningful predictions.  Ultimately I'm not sure if this is a case where the outcome is simply not strongly related to the available features or if an errant path in the wilderness of data science left me lost with no trail of bread crumbs.
