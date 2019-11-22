@@ -20,7 +20,7 @@ comments: false
 
 
 
-
+![GDP](https://github.com/johnwesleyharding/johnwesleyharding.github.io/blob/master/img/image.png){: .center-block :}
 
 | label | predicted | precision | recall | actual |
 | :------ |:--- | :--- | :--- | :--- |
